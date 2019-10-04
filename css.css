@@ -1,0 +1,79 @@
+body{
+    background-image: url("Bratmobile6.jpeg");
+min-height: 100vh;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+display: grid;
+grid-template-columns: 25% auto 25%;
+}
+
+img:nth-of-type(1) {
+    grid-column: 1/2;
+    width: 100%;
+    -webkit-transform:rotate(330deg);
+    -moz-transform: rotate(330deg);
+    -ms-transform: rotate(330deg);
+    -o-transform: rotate(330deg);
+    transform: rotate(330deg);
+    align-self: start;
+    margin-top: 40px;
+    max-width: 175px;
+}
+
+.bokscorner{
+    grid-column: 3/4;
+    display:grid;
+    grid-template-columns: auto auto;
+    max-width:110px;
+    justify-self: end;
+    
+}
+
+img:nth-of-type(2), img:nth-of-type(3){
+    width:100%;
+}
+
+.shop{
+    grid-column:2/3;
+    grid-row: 3/4;
+    background-color:rgb(211, 51, 199);
+    border-radius: 10px;
+    height: 100px;
+    width: 75%;
+    text-align: center;
+    text-justify: center;
+    align-self: center;
+    justify-self: center;
+    border: 0.5px solid;
+    max-width: 250px;
+}
+
+.gallery{
+    grid-column:1/2;
+    grid-row: 3/4;
+    background-color:rgb(211, 51, 199);
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    justify-self: end;
+    border: 0.5px solid;
+    max-width: 200px;
+}
+
+.des{
+    grid-column:3/4;
+    grid-row: 3/4;
+    background-color:rgb(211, 51, 199);
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    text-justify: center;
+    align-self: center;
+    justify-self: start;
+    max-width: 200px;
+    border: 0.5px solid;
+}
