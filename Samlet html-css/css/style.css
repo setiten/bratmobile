@@ -10,7 +10,7 @@
 }
 
 
-.logo, .email{
+.logo, .email, .cart{
     grid-column: 1/2;
     width: 100%;
     -webkit-transform:rotate(330deg);
@@ -101,20 +101,44 @@
 
 
 
-header{
+header{ 
+    background-color: #842be0;
+    font-family: 'Mansalva';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;}
+    grid-template-columns: auto auto auto auto auto auto;
+}
+    
 header p:nth-child(1){
-    grid-column: 1/2;}
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: end;}
 header p:nth-child(2){
-    grid-column: 2/3;}
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;}
 header p:nth-child(3){
-    grid-column: 3/4;}
+    grid-column: 3/4;
+    justify-self: center;
+    align-self: start;}
 header p:nth-child(4){
-    grid-column: 4/5;}
+    grid-column: 4/5;
+    justify-self: center;
+    align-self: start;}
 header p:nth-child(5){
-    grid-column: 5/6;}
+    grid-column: 5/6;
+    justify-self: center;
+    align-self: center;}
 
+.cart{
+    grid-column: 6/7;
+    justify-self: right;
+    align-self: end;
+    width: 75px; 
+    height: 75px;
+}
 
 main{
     display: grid;
@@ -476,4 +500,29 @@ margin-top: -1.3vh;
     grid-row: 5;
     background-color: #D329C5;
     padding: 20px;
+}
+
+
+.footer{
+    background: rgb(199, 198, 198);
+    color: rgb(0, 0, 0);
+    height: 80px;
+    text-align: center;
+    padding-top: 0,25vh;
+    text-shadow:  -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+
+.mail22{
+    font-family: 'Mansalva';
+    font-style: normal;
+    font-size: 35px;
+    text-decoration: none;
+    color: rgb(158, 25, 147);  
+}
+
+.mail{
+    font-family: 'Mansalva';
+    font-style: normal;
+    font-size: 35px;
 }
